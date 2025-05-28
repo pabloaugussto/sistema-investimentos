@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../frontend/style.css">
     <title>Meus Investimentos</title>
-    </head>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
     <h1>Sistema de Gerenciamento de Investimentos</h1>
@@ -15,6 +15,8 @@
         <div class="form-container">
             <h2>Adicionar / Editar Investimento</h2>
             <form id="investment-form">
+                <input type="hidden" id="investment-id">
+
                 <div>
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" required>
@@ -31,7 +33,9 @@
                     <label for="data">Data:</label>
                     <input type="date" id="data" required>
                 </div>
+
                 <button type="submit">Salvar</button>
+                <button type="button" id="btn-cancelar" style="display: none;">Cancelar Edição</button>
             </form>
         </div>
 
@@ -58,7 +62,7 @@
 
     </div>
 
-    <script src="../frontend/script.js"></script>
+    <script src="script.js"></script>
 
-    </body>
+</body>
 </html>
