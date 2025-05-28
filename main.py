@@ -1,7 +1,7 @@
  
 from fastapi import FastAPI
-from .database import engine, Base
-from .routes import router  # Importa o router do arquivo routes.py
+from database import engine, Base
+from routes import router as investimentos_router # Importa o router do arquivo routes.py
 
 # Cria as tabelas no banco de dados (se não existirem)
 Base.metadata.create_all(bind=engine)
@@ -14,6 +14,6 @@ app = FastAPI(
 )
 
 # Inclui as rotas definidas em routes.py
-app.include_router(router, prefix="/api/v1") # Adicionando um prefixo opcional
+app.include_router(investimentos_router, prefix="/api/v1") # Adicionando um prefixo opcional
 
 print("Aplicação FastAPI iniciada. Acesse a documentação em /docs ou /redoc.")
