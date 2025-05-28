@@ -1,0 +1,23 @@
+# Ambiente Virtual
+venv/
+.venv/
+
+# Cache do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Banco de dados SQLite (se usar o nome padrão)
+test.db
+*.db
+*.sqlite3
+
+# Arquivos do VS Code (opcional, mas recomendado)
+.vscode/
+
+# Outros (dependências, logs, etc.)
+*.egg-info/
+dist/
+build/
+*.log
