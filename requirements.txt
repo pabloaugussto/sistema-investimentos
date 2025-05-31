@@ -2,4 +2,6 @@ fastapi
 uvicorn
 pydantic
 SQLAlchemy
+httpx #Adicionado
+pytest #Adicionado
 
